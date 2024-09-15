@@ -97,17 +97,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun computePerPerson(person: Int) {
-        if (etBaseAmount.text.isEmpty() || person == 0) {
-            tvTipAmount.text = ""
-            tvTotalAmount.text = ""
+        if (etBaseAmount.text.isEmpty() || tvTotalAmount.text.isEmpty() || person == 0) {
             tvPerPerson.text = ""
             return
         }
 
         val total = tvTotalAmount.text.toString().toDouble()
+        val res = total / person
 
-
-        tvPerPerson.text = "%.2f".format(total / person)
+        tvPerPerson.text = "%.2f".format(res)
     }
 
     private fun updateTipDescription(tipPercent: Int) {
