@@ -20,4 +20,4 @@ The following **extensions** are implemented:
 * [x] Custom colors palette selected
 * [x] Split bill between people
 
-### [Video Link](https://www.youtube.com/shorts/oWj5LrPXV9o)
+### [Video Link](https://youtu.be/Fi96G1LtrUA)
